@@ -1,0 +1,201 @@
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: block;
+}
+
+/* Container centers content with max width */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+/* Header and Logo */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.logo i {
+  font-size: 32px;
+  color: #fff;
+}
+
+.header p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 12px;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  cursor: default;
+  transition: transform 0.3s ease;
+}
+
+.nav-btn:hover {
+  transform: translateY(-5px);
+}
+
+.nav-btn i {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.nav-btn span {
+  font-size: 13px;
+}
+
+/* Login/Register Form Box */
+.form-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Welcome Title */
+.form-box h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.form-box p {
+  font-size: 14px;
+  margin-bottom: 24px;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Toggle Buttons */
+.toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toggle button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #ffffff20;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.toggle button.active {
+  background: #fff;
+  color: #2575fc;
+  border-radius: 6px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+form button {
+  padding: 12px;
+  background: #fff;
+  color: #2575fc;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #f1f1f1;
+}
+
+/* Forgot Password link */
+.forgot {
+  display: block;
+  margin-top: 10px;
+  text-align: right;
+  font-size: 13px;
+  color: #ddd;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+/* Scroll-safe layout for short viewports */
+@media (max-height: 600px), (max-width: 400px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .form-box {
+    padding: 20px;
+  }
+
+  .logo {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
