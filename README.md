@@ -47,5 +47,5 @@ To run the project locally:
 ```bash
 git clone https://github.com/Janani31-ganesh/MoneyMate.git
 cd MoneyMate
-open index.html
+start index.html
 
